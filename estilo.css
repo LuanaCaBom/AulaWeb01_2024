@@ -11,6 +11,7 @@
     --secondary: #d9d9d9;
     --third: #efefef;
     --white: #ffffff;
+    --black: #000000;
 }
 header {
     display: flex;
@@ -20,7 +21,45 @@ header {
     border-bottom-style: solid;
     height: 5rem;
 }
-
-body {
-    background-color: rgb(255, 255, 255);
+header img {
+    padding: 0.3rem;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+header nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: var(--black);
+}
+header nav a:hover {
+    font-weight: lighter;
+}
+footer {
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    background-color: #ad887c;
+}
+footer img {
+    margin: 0 0.5rem;
+}
+main {
+    height: calc(115vh - 8.5rem);
+}
+/*Index*/
+main.index section {
+    display: flex;
+}
+main.index section img {
+    width: 100%;
+}
+/*Comentário*/
+main.comentario {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    align-content: baseline;
 }
