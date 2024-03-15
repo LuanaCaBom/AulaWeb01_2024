@@ -1,25 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     outline: 0;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
 }
 :root {
     --primary: #ad887c;
     --secondary: #d9d9d9;
     --third: #efefef;
-    --white: #ffffff;
-    --black: #000000;
+    --white: #fff;
+    --black: #000; /*simplificação do 000000*/
 }
 header {
     display: flex;
     justify-content: space-between;
-    border-bottom: var(--primary);
-    border-bottom-width: 0.5rem;
-    border-bottom-style: solid;
-    height: 5rem;
+    align-items: center;
+    background-color: #ad887c;
+    height: 6.5rem;
+}
+header figure{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 140%;
+    font-weight: 400;
+    color: var(--white);
 }
 header img {
     padding: 0.3rem;
@@ -27,39 +34,54 @@ header img {
 header nav {
     display: flex;
     align-items: center;
-    font-weight: bold;
+    font-size: 125%;
+    font-weight: 400;
 }
 header nav a {
-    margin: 0 1rem;
+    margin: 0 2rem;
     text-decoration: none;
-    color: var(--black);
+    color: var(--white);
+}
+header nav a.aqui {
+    font-weight: lighter;
 }
 header nav a:hover {
     font-weight: lighter;
 }
-footer {
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-    background-color: #ad887c;
-}
-footer img {
-    margin: 0 0.5rem;
-}
 main {
-    height: calc(115vh - 8.5rem);
+    min-height: calc(100vh - 11rem);
 }
-/*Index*/
+main.index  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 main.index section {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 main.index section img {
-    width: 100%;
+    width: 55rem;
+}
+footer {
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: #ad887c;
+    justify-content: space-between;
+}
+footer figure img {
+    margin: 0 1.2rem;
+    width: 2.3rem;
 }
 /*Comentário*/
 main.comentario {
-    display: grid;
+    display: flex;
     grid-template-columns: auto auto auto auto;
     justify-content: space-around;
     align-content: baseline;
 }
+
+/* no html ===> ./nomedapasta ..(volta um arquivo)*/
