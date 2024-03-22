@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figma</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <link rel="stylesheet" href="menu.css">
 </head>
 
 <body>
@@ -13,11 +15,19 @@
         <figure>
             <img src="./img/talher.png" alt="Logo"> FitRecipes
         </figure>
+        <input type="checkbox" id="menu-abre">
         <nav> 
-            <a class="aqui" href="index.html">Home</a>
-            <a href_> Dietas </a> 
-            <a href_> Alimentos </a>
-            <a href="receitas.html">Receitas</a>
+            <label for="menu-abre">
+                <span class="menu-hamburger"></span>
+                <span class="menu-hamburger"></span>
+                <span class="menu-hamburger"></span>
+            </label>
+            <div>
+                <a class="aqui" href="index.html">Home</a>
+                <a href_> Dietas </a> 
+                <a href_> Alimentos </a>
+                <a href="receitas.html">Receitas</a>
+            </div>
         </nav>
     </header>
     <main class="index">
@@ -27,15 +37,15 @@
     </main>
     <footer>
         <figure>
-            <a href="http://" target="_blank">
+            <a href="http://www.instagram.com" target="_blank">
                 <img src="./img/insta.png" alt="Instagram">
             </a>
             <img src="./img/face.png" alt="Facebook">
             <img src="./img/twitter.png" alt="Twitter">
         </figure>
-        <a href="http://">
-            <a href_> Saiba Mais </a>
-        </a>
+        <div>
+                <a href_> Saiba Mais </a>
+        </div>
     </footer>
 </body>
 
