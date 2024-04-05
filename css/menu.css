@@ -2,10 +2,14 @@ header input#menu-abre {
     display: none;
 }
 
-@media(max-width: 400px) {
+@media(max-width: 795px) {
     header {
         flex-direction: row-reverse;
         padding-left: 12px;
+    }
+
+    header figure {
+        margin-right: 1.5rem;
     }
 
     header figure span {

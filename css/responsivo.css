@@ -1,4 +1,4 @@
-@media(max-width: 800px) {
+@media(max-width: 885px) {
 
     main.index section {
         display: flex;
@@ -48,29 +48,16 @@
     }
 
     footer figure {
-        display: grid;
-        grid-template-columns: 30% 30% 30%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer figure img {
+        margin: 1rem;
     }
 
     footer div {
-        width: 95px;
-    }
-    
-    .Instagram {
-        padding-left: 12px;
         padding-right: 12px;
-        scale: 2.5;
-    }
-
-    .Facebook {
-        padding-left: 12px;
-        padding-right: 12px;
-        scale: 2.5;
-    }
-
-    .Twitter {
-        padding-left: 12px;
-        padding-right: 12px;
-        scale: 2.5; 
+        scale: 0.8;
     }
 }
