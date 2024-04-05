@@ -1,0 +1,76 @@
+@media(max-width: 800px) {
+
+    main.index section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main.index section img {
+        width: 100%;
+        padding: 5%;
+    }
+
+}
+
+@media(max-width: 600px) {
+
+    main.index section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main.index section img {
+        width: 100%;
+        padding: 5%;
+    }
+
+}
+
+@media(max-width: 400px) {
+
+    header figure {
+        padding-right: 12px;
+    }
+
+    main.index section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main.index section img {
+        width: 100%;
+        padding: 5%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer figure {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+    }
+
+    footer div {
+        width: 95px;
+    }
+    
+    .Instagram {
+        padding-left: 12px;
+        padding-right: 12px;
+        scale: 2.5;
+    }
+
+    .Facebook {
+        padding-left: 12px;
+        padding-right: 12px;
+        scale: 2.5;
+    }
+
+    .Twitter {
+        padding-left: 12px;
+        padding-right: 12px;
+        scale: 2.5; 
+    }
+}

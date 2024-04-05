@@ -5,6 +5,7 @@ header input#menu-abre {
 @media(max-width: 400px) {
     header {
         flex-direction: row-reverse;
+        padding-left: 12px;
     }
 
     header figure span {
@@ -20,23 +21,21 @@ header input#menu-abre {
     }
 
     header nav label[for='menu-abre'] span.menu-hamburger {
-        background-color: var(--white);
-        border: 2px solid var(--black);
+        background-color: var(--black);
+        border: 1px solid var(--black);
         width: 30px;
         height: 3px;
     }
 
-    header nav label[for='menu-abre'] span.menu-hamburger:first-child {
+    header nav label[for='menu-abre'] span.menu-hamburger {
         margin-bottom: 0.5rem;
     }
 
-    header nav label[for='menu-abre'] span.menu-hamburger:last-child {
-        margin-top: 0.5rem;
-    }
-
     header input:checked~nav label[for='menu-abre'] span.menu-hamburger {
-        transition: 0.5s;
-        
+        background-color: var(--white);
+        border: 1px solid var(--black);
+        width: 30px;
+        height: 3px;
     }
 
     header nav div {
@@ -50,18 +49,19 @@ header input#menu-abre {
     header input:checked~nav div {
         position: absolute;
         top: 1rem;
-        left: 2rem;
+        left: 1.5rem;
         display: flex;
         flex-direction: column;
     }
 
     header input:checked~nav div a {
         padding: 0.2rem;
-        background-color: var(--white);
+        background-color: var(--primary);
+        border: 1.8px solid var(--secondary);
     }
 
     header input:checked~nav div a:hover {
-        background-color: var(--black);
+        background-color: var(--primary);
         color: var(--white);
     }
 }
